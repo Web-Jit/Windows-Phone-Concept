@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-image: url(../images/bg-zotac.jpg);
+	background-position: center;
+    font-family: 'Assistant', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;
+	color: white;
+	display: block;
+
+}
+.swiper {
+    height: 87vh;
+  }
+.swiper-slide{
+	padding: 7px;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+}
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.status-info p {
+	align-self:center;
+	padding:25px;
+}
+
+#charge {
+	display:block;
+	width:22px;
+	height:12px;
+    padding: 4px;
+}
+
+.hidden {display:none;}
+
+.meta{
+	display:block;
+	position:absolute;
+	bottom:0;
+	width:98%;
+	padding:10px 1%;
+	margin:0;
+}
+
+#charge-status{
+	transition:.4s all;
+	opacity:1;
+}
+
+.bat-change{
+	opacity:.2;
+}
+
+a {
+	color:#231f20;
+}
+
+@media screen and (max-width:800px){
+
+	.meta {
+		text-align:center;
+		width:96%;
+		padding:2%;
+	}
+}
+
+.headifobar{
+    width: 100%;
+    height: 18px;
+    display: flex;
+    justify-content: end;
+}
+.btmapps{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.apps{
+	background-color:rgb(255, 255, 255, 0.4);
+	padding: 13px;	
+	margin: 0px 10px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bingsearch{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	padding: 5px;
+	height: fit-content;
+}
+.bingsearch input{
+	outline: none;
+	border: 0px solid transparent;
+	padding: 10px;
+	border-radius: 28px;
+	width: 22rem;
+	height: 1.5rem;
+	font-size: 18px;
+}
+.slideapps{
+	height: 3rem;
+	width: 3rem;
+	padding: 5px;
+	margin: 14px;
+	display: grid;
+	justify-content: center;
+	grid-gap: 12px;
+}
+
+.sldapimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock{
+	font-size: 5rem;
+}

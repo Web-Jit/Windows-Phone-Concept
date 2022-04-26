@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows In Phone</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="headifobar">
+        <div id="status">
+          <svg id="charge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.29 176.83">
+            <title>battery</title>
+            <rect id="charge-status" x="17" y="17" data-full="" width="0" height="142" fill="">
+            	<animate id="charge-status-ani" attributeName="width" from="0" to="" dur="2s" repeatCount="1" />
+            </rect>
+            <g id="battery-path">
+              <path d="M443.2,310.95a17.69,17.69,0,0,1,17.68,17.68v53a17.69,17.69,0,0,1-17.68,17.68v22.1a22.17,22.17,0,0,1-22.1,22.1H164.69a22.17,22.17,0,0,1-22.1-22.1V288.85a22.17,22.17,0,0,1,22.1-22.1h256.4a22.17,22.17,0,0,1,22.1,22.1v22.1Zm-2.7,70.73v-53h-15V288.85a4.26,4.26,0,0,0-4.42-4.42H164.69a4.26,4.26,0,0,0-4.42,4.42V421.47a4.26,4.26,0,0,0,4.42,4.42h256.4a4.26,4.26,0,0,0,4.42-4.42V381.68h15Z" transform="translate(-142.59 -266.74)" fill="#231f20"/>
+            </g>
+            <polygon class="hidden" id="charge-path" points="129.64 37.69 189.71 37.69 165.26 80.27 191.19 80.27 127.74 146.66 136.81 96.07 111.94 96.5 129.64 37.69" fill="#f1c40f">
+            	<animate attributeName="fill" from="#f1c40f" to="#fcd536" dur="2s" repeatCount="indefinite" />
+            </polygon>
+          </svg>
+        </div>
+
+    </div>
+
+
+    
+    <!-- Main Screen -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <div class="bingsearch"><input type="text" placeholder="Search with Bing"></div>
+      </div>
+      <div class="swiper-slide" style="height: fit-content;">
+        <div class="row">
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/fluency/29/000000/pubg.png"/>
+            </div>
+            <p>PUBG</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+            <img src="https://img.icons8.com/color/29/000000/whatsapp--v1.png"/>
+            </div>
+            <p>Whatsapp</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/fluency/29/000000/instagram-new.png"/>
+            </div>
+            <p>Instagram</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/color/29/000000/twitter--v1.png"/>
+            </div>
+            <p>Twitter</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/fluency/29/000000/facebook-new.png"/>
+            </div>
+            <p>Facebook</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/fluency/29/000000/tiktok.png"/>
+            </div>
+            <p>TikTok</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/fluency/29/000000/youtube-play.png"/>
+            </div>
+            <p>Youtube</p>
+          </div>
+          <div class="slideapps">
+            <div class="sldapimg">
+              <img src="https://img.icons8.com/color/29/000000/google-pay-india.png"/>
+            </div>
+            <p>Pay</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+
+  <div class="btmapps">
+    <div class="apps"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/24/000000/external-phone-call-commerce-prettycons-flat-prettycons.png"/></div>
+    <div class="apps"><img src="https://img.icons8.com/fluency/26/000000/camera.png"/></div>
+    <div class="apps"><img src="https://img.icons8.com/fluency/26/000000/ms-edge-new.png"/></div>
+  </div>
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+  </script>
+<script src="./js/index.js"></script>
+</html>
