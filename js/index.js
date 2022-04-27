@@ -102,3 +102,10 @@ function showTime(){
 }
 
 showTime();
+
+
+
+function edgetoggle() {
+	const dial = document.getElementById('edge');
+	dial.classList.toggle('windowsvisible');
+}

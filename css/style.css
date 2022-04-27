@@ -11,16 +11,15 @@ body{
 	overflow: hidden;
 	color: white;
 	display: block;
-
 }
 .swiper {
     height: 87vh;
   }
 .swiper-slide{
-	padding: 7px;
 	text-align: center;
 	display: grid;
 	justify-content: center;
+	align-items: center;
 }
 .row{
 	display: flex;
@@ -64,11 +63,15 @@ a {
 }
 
 @media screen and (max-width:800px){
-
 	.meta {
 		text-align:center;
 		width:96%;
 		padding:2%;
+	}
+}
+@media screen and (max-width:400px){
+	.swiper-slide{
+		width: 380px;
 	}
 }
 
@@ -107,7 +110,6 @@ a {
 	border: 0px solid transparent;
 	padding: 10px;
 	border-radius: 28px;
-	width: 22rem;
 	height: 1.5rem;
 	font-size: 18px;
 }
@@ -130,3 +132,24 @@ a {
 .clock{
 	font-size: 5rem;
 }
+#edge{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.windowsvisible{
+	display: block !important;
+}
+.appclose{
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	margin: 3px;
+	color: black;
+}
+
